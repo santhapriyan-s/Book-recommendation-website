@@ -1,0 +1,71 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px; /* Increased padding for the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.signup-container h2 {
+    margin-bottom: 25px; /* Increased margin for better spacing */
+    font-size: 24px;
+    color: #333;
+}
+
+.signup-container form {
+    width: 100%;
+}
+
+.signup-container input {
+    width: 100%; /* Full width of the container */
+    padding: 15px; /* Increased padding for better usability */
+    margin: 15px 0; /* Increased margin for better separation between inputs */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners for a softer look */
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input focus styles */
+.signup-container input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none; /* Remove default outline */
+}
+
+.signup-container button {
+    width: 100%; /* Full width of the container */
+    padding: 15px; /* Increased padding for better usability */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Match the input corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.signup-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.signup-container .error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Back to login button */
+.signup-container button:last-of-type {
+    background-color: #28a745; /* Different color for a secondary button */
+    margin-top: 10px;
+}
+
+.signup-container button:last-of-type:hover {
+    background-color: #218838; /* Darker green on hover */
+}
